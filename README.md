@@ -2,8 +2,8 @@
 
 ---
 ### 赛题见如下链接
-比赛宣传页:[https://www.4paradigm.com/competition/autospeech2021](https://www.4paradigm.com/competition/autospeech2021)
-Feedback Phase(初赛): [https://www.automl.ai/competitions/15#home](https://www.automl.ai/competitions/15#home)
+比赛宣传页:[https://www.4paradigm.com/competition/autospeech2021](https://www.4paradigm.com/competition/autospeech2021)     
+Feedback Phase(初赛): [https://www.automl.ai/competitions/15#home](https://www.automl.ai/competitions/15#home)      
 Final Phase(复赛): [https://www.automl.ai/competitions/12#home](https://www.automl.ai/competitions/12#home)
 
 ---
@@ -19,14 +19,14 @@ Final Phase(复赛): [https://www.automl.ai/competitions/12#home](https://www.au
 
 ---
 ### 致谢
-感谢以下优秀的开源工作：
-https://github.com/fauxneticien/bnf_cnn_qbe-std
-https://github.com/idiap/CNN_QbE_STD
-https://github.com/wenet-e2e/wenet
-https://github.com/kaldi-asr/kaldi
-https://huggingface.co/speechbrain/spkrec-ecapa-voxceleb
+感谢以下优秀的开源工作：    
+https://github.com/fauxneticien/bnf_cnn_qbe-std     
+https://github.com/idiap/CNN_QbE_STD        
+https://github.com/wenet-e2e/wenet      
+https://github.com/kaldi-asr/kaldi      
+https://huggingface.co/speechbrain/spkrec-ecapa-voxceleb        
 ...
 
-参考文献
-[1] Dhananjay Ram, Lesly Miculicich, Herve Bourlard. CNN based Query by Example Spoken Term Detection. INTERSPEECH 2018.     
+参考文献        
+[1] Dhananjay Ram, Lesly Miculicich, Herve Bourlard. CNN based Query by Example Spoken Term Detection. INTERSPEECH 2018.        
 [2] Brecht Desplanques, Jenthe Thienpondt, Kris Demuynck. ECAPA-TDNN: Emphasized Channel Attention, Propagation and Aggregation in TDNN Based Speaker Verification. INTERSPEECH 2020.
