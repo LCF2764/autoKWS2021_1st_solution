@@ -1,0 +1,32 @@
+# Experiment metadata
+exp_id: 'autoKWS2021-test'
+exp_notes: |
+    Assuming you've run training on the sws2013-sample dataset with
+    the provided 'train_config.yaml' file, so there's a model-e045.pt
+    in the relevant folder.
+
+artifacts:
+    dir: 'tmp/autoKWS2021-test'
+    log: 'output.log'
+
+model_name: 'ConvNet'
+model_path: 'kwd_sys/models/model_autoKWS2021_ConvNet_noaug_100x300.pt'
+mode: 'eval'
+apply_vad: False
+
+use_gpu: True
+
+dl_num_workers: 4
+datasets:
+    sws2013_sample_test:
+        # Yes, the dev and test data are the same in this example.
+    #     root_dir: 'data/sws2013-sample'
+    #     labels_csv: 'test_labels.csv'
+    #     query_dir: 'test_queries'
+    #     audio_dir: 'references'
+    #     batch_size: 5
+    # dev:
+        root_dir: 'data/autoKWS2021_test'
+        labels_csv: 'test_labels.csv'
+        feats_scp: 'feats.scp'
+        batch_size: 10

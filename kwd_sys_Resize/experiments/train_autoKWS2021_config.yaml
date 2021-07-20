@@ -1,0 +1,53 @@
+# Experiment metadata
+exp_id: 'autoKWS2021-train'
+exp_notes: |
+    This file will be copied into the artifacts directory at run time.
+
+# Experiment hyperparameters
+
+# model_path: '/home/lcf/speech/bnf_cnn_qbe-std/tmp/sws2013Database_dev_eval-train/checkpoints/model-e032.pt'
+## Model name must match one of the model classes in src/Models.py
+model_name: 'ConvNet'
+num_epochs: 60
+optimizer: adam
+learning_rate: 0.001
+criterion: BCELoss
+apply_vad: False
+
+# Run-time parameters 
+## Where to out log files, train and dev results, model checkpoints
+artifacts:
+    dir: 'tmp/autoKWS2021-train_ConvNet_noaug_100x300'
+    log: 'output.log'
+
+## Use GPU? (Specifically, CUDA)
+use_gpu: True
+## Set mode of experiment (train or eval)
+mode: 'train'
+## Evaluate model on dev set every 10 epochs
+eval_dev_epoch: 1
+## Save model every 10 epochs
+save_epoch: 1
+
+# Data-related parameters
+
+## How many workers to use with PyTorch data loader
+dl_num_workers: 6
+## Note for training datasets must be named exactly 'train' (and optionally 'dev')
+## For eval mode, you can supply as many datasets you'd like to test on with whatever names
+datasets:
+    train:
+        root_dir: 'data/autoKWS2021_data'
+        labels_csv: 'train_labels_all_noaug.csv'
+        feats_scp: 'bnf/data/feats.scp.new'
+        max_height: 100
+        max_width: 300
+        batch_size: 64
+
+    dev:
+        root_dir: 'data/autoKWS2021_test'
+        labels_csv: 'test_labels.csv'
+        feats_scp: 'feats.scp'
+        max_height: 100
+        max_width: 300
+        batch_size: 5
